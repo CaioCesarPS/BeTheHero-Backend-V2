@@ -1,43 +1,42 @@
-import IdVO from '../../commom/domain/value-objects/idVO';
-
+import { IdVO, TitleVO, DescriptionVO, ValueVO } from '@libs/modules';
 export default class Incidents {
   private _id: IdVO;
-  private _title: string;
-  private _description: string;
-  private _value: number;
-  private _ong_id: string;
+  private _title: TitleVO;
+  private _description: DescriptionVO;
+  private _value: ValueVO;
+  private _ong_id: IdVO;
 
   constructor(
-    id: IdVO,
+    id: string,
     title: string,
     description: string,
     value: number,
     ongId: string,
   ) {
-    this._id = id;
-    this._title = title;
-    this._description = description;
-    this._value = value;
-    this._ong_id = ongId;
+    this._id = new IdVO(id);
+    this._title = new TitleVO(title);
+    this._description = new DescriptionVO(description);
+    this._value = new ValueVO(value);
+    this._ong_id = new IdVO(ongId);
   }
 
   get id(): IdVO {
     return this._id;
   }
 
-  get title(): string {
+  get title(): TitleVO {
     return this._title;
   }
 
-  get description(): string {
+  get description(): DescriptionVO {
     return this._description;
   }
 
-  get value(): number {
+  get value(): ValueVO {
     return this._value;
   }
 
-  get ongId(): string {
+  get ongId(): IdVO {
     return this._ong_id;
   }
 }
