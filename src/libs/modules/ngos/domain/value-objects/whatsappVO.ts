@@ -1,10 +1,14 @@
 export class WhatsappVO {
-  private isValidEmail = (value: string): boolean => {
+  constructor(public value: string) {
+    this.isValidWhatsapp(value);
+  }
+
+  private isValidWhatsapp = (value: string): void => {
     const emailRegex =
       /^[\+]?[(]?[0-9]{4}[)]?[-\s\.]?[0-9]{4}[-\s\.]?[0-9]{4,6}$/;
-    return emailRegex.test(value);
+    const isValid = emailRegex.test(value);
+    if (!isValid) {
+      throw new Error('Invalid whatsapp');
+    }
   };
-  constructor(value: string) {
-    this.isValidEmail(value);
-  }
 }

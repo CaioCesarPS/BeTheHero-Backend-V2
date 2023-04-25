@@ -6,8 +6,8 @@ export class DescriptionVO {
     if (!this.value) {
       throw new Error('Description is required');
     }
-    if (this.value.length < 300) {
-      throw new Error('Description must be at least 300 characters long');
+    if (this.value.length > 300) {
+      throw new Error('Description must be at less than 300 characters');
     }
   }
 }

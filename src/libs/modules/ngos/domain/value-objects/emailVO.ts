@@ -1,9 +1,13 @@
 export class EmailVO {
-  private isValidEmail = (email: string): boolean => {
-    const emailRegex = /\S+@\S+\.\S+/;
-    return emailRegex.test(email);
-  };
-  constructor(value: string) {
+  constructor(public value: string) {
     this.isValidEmail(value);
   }
+
+  private isValidEmail = (email: string): void => {
+    const emailRegex = /\S+@\S+\.\S+/;
+    const isValid = emailRegex.test(email);
+    if (!isValid) {
+      throw new Error('Invalid e-mail');
+    }
+  };
 }
