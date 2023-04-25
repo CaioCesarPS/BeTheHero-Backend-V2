@@ -8,8 +8,8 @@ export class TitleVO {
       throw new Error('Title is required');
     }
 
-    if (this.value.length < 50) {
-      throw new Error('Title must be at least 50 characters long');
+    if (this.value.length >= 100) {
+      throw new Error('Title must be at less than 100 characters');
     }
   }
 }
