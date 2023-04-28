@@ -1,4 +1,6 @@
-import { IdVO, TitleVO, DescriptionVO, ValueVO } from '@libs/modules';
+import { IdVO } from '../../commom';
+import { DescriptionVO, TitleVO, ValueVO } from './value-objects';
+
 export default class Incidents {
   private _id: IdVO;
   private _title: TitleVO;
