@@ -1,11 +1,5 @@
-import {
-  IdVO,
-  NameVO,
-  EmailVO,
-  WhatsappVO,
-  CityVO,
-  StateVO,
-} from '@libs/modules';
+import { IdVO } from '../../commom';
+import { CityVO, EmailVO, NameVO, StateVO, WhatsappVO } from './value-objects';
 
 export class Ngos {
   private _id: IdVO;
@@ -17,17 +11,14 @@ export class Ngos {
 
   constructor(
     id: string,
-    name: {
-      firstName: string;
-      lastName: string;
-    },
+    name: string,
     email: string,
     whatsapp: string,
     city: string,
     state: string,
   ) {
     this._id = new IdVO(id);
-    this._name = new NameVO(name.firstName, name.lastName);
+    this._name = new NameVO(name);
     this._email = new EmailVO(email);
     this._whatsapp = new WhatsappVO(whatsapp);
     this._city = new CityVO(city);
