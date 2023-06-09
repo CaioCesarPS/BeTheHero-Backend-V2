@@ -1,4 +1,4 @@
-import { Ngos } from './ngos';
+import { Ngos } from './ngo';
 
 describe('ngos entity', () => {
   it('Should create a ngos entity', () => {

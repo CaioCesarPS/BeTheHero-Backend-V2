@@ -1,2 +1,2 @@
 export * from './value-objects/index';
-export * from './incidents';
+export * from './incident';

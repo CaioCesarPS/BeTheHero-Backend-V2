@@ -1,4 +1,4 @@
-import { IdVO } from '../../commom';
+import { IdVO } from '../../common';
 import { DescriptionVO, TitleVO, ValueVO } from './value-objects';
 
 export default class Incidents {

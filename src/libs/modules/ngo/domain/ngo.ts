@@ -1,7 +1,7 @@
-import { IdVO } from '../../commom';
+import { IdVO } from '../../common';
 import { CityVO, EmailVO, NameVO, StateVO, WhatsappVO } from './value-objects';
 
-export class Ngos {
+export class Ngo {
   private _id: IdVO;
   private _name: NameVO;
   private _email: EmailVO;

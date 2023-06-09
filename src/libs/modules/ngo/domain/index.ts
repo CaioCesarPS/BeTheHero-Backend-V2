@@ -1,2 +1,2 @@
 export * from './value-objects';
-export * from './ngos';
+export * from './ngo';

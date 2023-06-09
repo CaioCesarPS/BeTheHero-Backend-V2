@@ -1,3 +1,3 @@
-export * from './commom';
-export * from './incidents';
-export * from './ngos';
+export * from './common';
+export * from './incident';
+export * from './ngo';
