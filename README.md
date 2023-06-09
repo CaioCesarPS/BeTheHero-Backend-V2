@@ -4,7 +4,7 @@
 
 ## Description
 
-This project was developed during the Omnistack Week 11.0, promoted by Rocketseat. It is a web and mobile application that aims to connect people who are willing to help NGOs.
+This project was developed during the Omnistack Week 11.0, promoted by Rocketseat. It is a web and mobile application that aims to connect people who are willing to help NGO.
 
 ## Technologies
 
